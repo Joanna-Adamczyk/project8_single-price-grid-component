@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+// Font variables
+$karla: "Karla", sans-serif;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: hsl(204, 43%, 93%);
+  line-height: 1.5rem;
+  font-family: $karla;
+
+  @media (min-width: 56.25em) {
+    padding: 120px 380px 100px 380px;
+    height: 100vh;
+  }
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 56.25em) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.community,
+.subscription,
+.about {
+  padding: 30px;
+}
+
+.community {
+  background-color: white;
+
+  @media (min-width: 56.25em) {
+    grid-column: 1 / span 3;
+  }
+}
+
+.community .title {
+  color: hsl(179, 62%, 43%);
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+
+.community .subtitle {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.community .description {
+  color: hsl(218, 22%, 67%);
+}
+
+.subscription {
+  background-color: hsl(179, 50%, 46%);
+}
+
+.subscription .title {
+  color: hsl(204, 43%, 93%);
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subscription .price span {
+  color: hsl(204, 43%, 93%);
+  font-size: 2rem;
+  padding-right: 0.5rem;
+}
+
+.subscription .price {
+  color: hsl(179, 70%, 56%);
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subscription .description {
+  color: hsl(204, 43%, 93%);
+  font-size: 1rem;
+  padding-bottom: 50px;
+}
+
+.subscription button {
+  font-size: 0.9rem;
+  // font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  padding: 15px 90px;
+  border: none;
+  border-radius: 10px;
+}
+
+.subscription button:hover {
+  cursor: pointer;
+  box-shadow: 0 1px rgb(71, 70, 70);
+}
+
+.about {
+  background-color: hsl(179, 69%, 49%);
+}
+
+.about .title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.about ul {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.about li {
+  list-style: none;
+  font-size: 0.9rem;
+  color: hsl(204, 43%, 93%);
+}
+
+footer {
+  color: rgb(70, 66, 66);
+  font-size: 0.8rem;
+  text-align: center;
+
+  @media (min-width: 56.25em) {
+    padding: 0px;
+  }
+}
+
+footer a {
+  color: rgb(70, 66, 66);
+  text-decoration: none;
+}
