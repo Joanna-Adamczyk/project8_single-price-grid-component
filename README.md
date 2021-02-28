@@ -7,4 +7,4 @@ The project uses the CSS grid feature. <p>
 
 ## Technologies
 - HTML
-- CSS
+- SCSS
